@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('main').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+<body id="bg-img">
+    <header>
+            <nav class="menu">
+                <label class="name">Joona <span class="text-secondary">Manninen</span></label>
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collage.html" class="nav-link">
+                            Photo Collage
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            My Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="photos.html" class="nav-link">
+                            Photo Albums
+                        </a>
+                    </li>
+                    <li class="nav-item current">
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <label id="icon"><i class="fas fa-bars"></i></label>
+            </nav>
+        </nav-bar> 
+    </header>
+    
+    <main id="contact">
+        <h1 class="lg-heading">
+            Contact <span class="text-secondary">Me</span>
+        </h1>
+        <h2 class="sm-heading">
+            This is how you can reach me...
+        </h2>
+        <div class="boxes">
+            <div>
+                <span class="text-secondary">Email:</span>
+                johndoe@test.com
+            </div>
+            <div>
+                <span class="text-secondary">Phone:</span>
+                (555) 555-555
+            </div>
+            <div>
+                <span class="text-secondary">Address:</span>
+                50 main 
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2022
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

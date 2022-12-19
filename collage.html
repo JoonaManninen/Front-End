@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('main').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+<body class = "collage">
+    <header>
+        <nav class="menu">
+            <label class="name">Joona <span class="text-secondary">Manninen</span></label>
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="collage.html" class="nav-link">  
+                        Photo Collage
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">
+                        My Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="photos.html" class="nav-link">
+                        Photo Albums
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+            </ul>
+            <label id="icon"><i class="fas fa-bars"></i></label>
+        </nav>
+    </nav-bar> 
+</header>    
+    <main id="collage">
+        <slider>
+            <slide><p>My Trip To Lapland</p></slide>
+            <slide><p>Summer In Finland</p></slide>
+            <slide><p>Italy</p></slide>
+            <slide><p>From My Spain Trip</p></slide>
+        </slider>
+    </main>
+
+    <footer id="main-footer" mar>
+        Copyright &copy; 2022
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
